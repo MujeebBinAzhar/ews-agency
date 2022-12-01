@@ -7,9 +7,12 @@ import Frontend from "../../components/Frontend";
 import Backend from "../../components/Backend";
 import Fullstack from "../../components/Fullstack";
 import Categories from "../../components/Categories";
+import About from "../../components/About";
+import Technologies from "../../components/Technologies";
 const Landing = () => {
   const ref = useRef(null);
   const ref2 = useRef(null);
+  const ref3 = useRef(null);
 
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -28,7 +31,6 @@ const Landing = () => {
           num="3"
           cull="col,image-container"
         />
-
         <Background />
 
         <img
@@ -73,6 +75,7 @@ const Landing = () => {
       </div>
 
       <div ref={ref} className="snap-inner landing-bottom">
+
         <div className="container-fluid padding-0">
           <div className="row">
             <div className="col-lg-2 col-md-3">
@@ -91,7 +94,7 @@ const Landing = () => {
               </div>
             </div>
             <div className="col-lg-8 col-md-6 d-flex flex-column my-auto align-items-center ">
-              <h5 className="heading-one text-center  mt-5">
+              <h5 className="heading-one text-center mt-4">
                 Welcome to <span>Elite Web Service</span>. Bring{" "}
                 <span>ideas</span> to reality.
               </h5>
@@ -101,21 +104,19 @@ const Landing = () => {
               <p className=" text-center banner-para">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
                 ab quaerat eaque. Possimus commodi quos mollitia laudantium
+                aperiam? Debitis aliquam seq orem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                ab quaerat eaque. Possimus commodi quos mollitia laudantium
                 aperiam? Debitis aliquam sequi vel, neque molestias error
-                consectetur dolor corrupti quisquam perferendis? Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Omnis ab quaerat
-                eaque. Possimus commodi quos mollitia laudantium aperiam?
-                Debitis aliquam sequi vel, neque molestias error consectetur
-                dolor corrupti quisquam perferendis? Lorem ipsum dolor sit, amet
-                consectetur adipi
+                consectetur dolor corrupti ui vel, neque molestias error
+                consectetur dolor corrupti
               </p>
-              <h6 className="mt-5 text-center">Our Portfolio</h6>
-              <div
+            
+              {/* <div
                 className="circular-btn circular-btn1 mt-3"
                 onClick={handleClick1}
               >
                 <AiOutlineArrowDown className="arrow-down" />
-              </div>
+              </div> */}
             </div>
 
             <div className="col-lg-2 col-md-3">
@@ -123,81 +124,27 @@ const Landing = () => {
             </div>
           </div>
         </div>
+
+
       </div>
 
-      <div ref={ref2} className="snap-inner portfolio position-relative ">
-        {/* <img src={require("../../assets/img/circle.svg").default} alt="elite-web-services"
-       className="ews-circle" /> */}
+      <div ref={ref2} className="snap-inner about position-relative ">
+        <About />
+      </div>
 
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-6  pt-md-5 ">
-              <div className="about-content mt-3 mt-md-5">
-                <h4>Who We Are</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                consectetur vitae maxime! Veniam, voluptas reiciendis
-                perspiciatis necessitatibus ex sapiente ipsum cupiditate,
-                repellat sint asperiores rerum quod natus nostrum voluptatibus
-                culpa? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Illum voluptate exercitationem eum similique molestiae id,
-                reprehenderit unde alias a ex totam deserunt .</p>
-              </div>
-              <diw className="row">
-                <div className="col-lg-6">
-                  <div className="skill about-content">
-                    <h6>Repeat Business &nbsp; — &nbsp; 90%</h6>
-                    <div className="progress">
-                      <span> </span>
-                    </div>
-                  </div>
-                </div>
+      <div ref={ref3} className="snap-inner about position-relative ">
+      <img
+        src={require("../../assets/img/group.png")}
+        alt="technologies"
+        className="side-img-two"
+      />
 
-                <div className="col-lg-6">
-                  <div className="skill about-content">
-                    <h6>Customer given 5 star rating &nbsp; — &nbsp; 100%</h6>
-                    <div className="progress progress-full"></div>
-                  </div>
-                </div>
-
-                <div className="col-lg-6">
-                  <div className="skill about-content">
-                    <h6>Completion of projects on time &nbsp; — &nbsp; 100%</h6>
-                    <div className="progress progress-full"></div>
-                  </div>
-                </div>
-
-                <div className="col-lg-6">
-                  <div className="skill about-content">
-                    <h6>Perfect Solutions &nbsp; — &nbsp; 100%</h6>
-                    <div className="progress progress-full"></div>
-                  </div>
-                </div>
-
-                <div className="col-lg-6">
-                  <div className="skill about-content">
-                    <h6>Team Experties & Collaboration &nbsp; — &nbsp; 100%</h6>
-                    <div className="progress progress-full"></div>
-                  </div>
-                </div>
-
-                
-                <div className="col-lg-6">
-                  <div className="skill about-content">
-                    <h6>Interataction with Client  &nbsp; — &nbsp; 100%</h6>
-                    <div className="progress progress-full"></div>
-                  </div>
-                </div>
-              </diw>
-            </div>
-            <div className="col-md-6">
-              <img
-                src={require("../../assets/img/about.jpg")}
-                alt="about_ews"
-                className="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
+      {/* <img
+        src={require("../../assets/img/group.png")}
+        alt="technologies"
+        className="side-img"
+      /> */}
+        <Technologies />
       </div>
     </section>
   );

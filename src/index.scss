@@ -41,12 +41,18 @@ code {
 }
 
 .snap {
-  scroll-snap-type: y mandatory;
-  overflow: auto;
-  max-height: 100vh;
+  
+  @media all and (min-width: 1600px) {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    max-height: 100vh;
+  }
 }
 .snap-inner {
-  scroll-snap-align: start;
+  @media all and (min-width: 1600px){
+    scroll-snap-align: start;
+  }
+ 
 }
 .heading-one {
   font-size: 5.5rem;
@@ -390,13 +396,18 @@ code {
   }
 }
 
-.portfolio {  
+.about {  
   background-color: #e5eefc;
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   
 }
 
+.poster{
+  max-height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
 .ews-circle {
   position: absolute;
   top: 50%;
@@ -428,4 +439,58 @@ code {
   .progress-full {
     background-color: $color-dark;
   }
+}
+.tech-card{
+  border-radius: 0.4rem;
+  padding: 0.5rem 0;
+}
+
+.about-link{
+  color: #000;
+  text-decoration: none;
+  display: flex;
+
+}
+.email-icon{
+  color: #fff;
+  
+   
+}
+
+.social-icons{
+  display:flex;
+  
+}
+.icon-container{
+  background-color: $color-dark;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  margin-right: 0.5rem;
+  align-items: center;
+  a{
+    margin-bottom: 0.3rem;
+  }
+}
+.min-height{
+  min-height: 312px;
+}
+.h100vh{
+  height: 100vh;
+}
+.side-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+  opacity: 0.1;
+}
+.side-img-two{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(20deg);
+  opacity: 0.2;
 }
