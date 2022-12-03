@@ -8,10 +8,12 @@ const Sidebar = () => {
  
   return (
     <>
-      <div className="container-fluid fixed-top   pt-2 ps-5 position-relative d-flex justify-content-between align-items-center">
+      <div className="container-fluid fixed-top   pt-2 ps-md-5 position-relative d-flex justify-content-between align-items-center">
+
+       
         <GoThreeBars
           color="#fff"
-          size={70}
+          className="bars"
            
           onClick={() => {
             setShow(true);
