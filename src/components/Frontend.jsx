@@ -104,7 +104,7 @@ const Frontend = () => {
     },
     {
       icon: figma,
-      name: "Figma to Html",
+      name: "Figma-Html",
       link: "#",
       class: "figma",
     },
@@ -114,6 +114,7 @@ const Frontend = () => {
       link: "#",
       class: "photoshop",
     },
+    
 
 
      

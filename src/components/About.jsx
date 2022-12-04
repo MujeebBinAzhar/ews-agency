@@ -171,7 +171,7 @@ const About = () => {
           <img
             src={require("../assets/img/about.jpg")}
             alt="about_ews"
-            className="img-fluid poster"
+            className="img-fluid poster mt-4 mt-md-0"
           />
         </div>
       </div>

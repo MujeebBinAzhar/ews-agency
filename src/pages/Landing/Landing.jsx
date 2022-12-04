@@ -7,6 +7,7 @@ import About from "../../components/About";
 import Technologies from "../../components/Technologies";
 import LandingBottom from "../../components/LandingBottom";
 import Services from "../../components/Services";
+import BackendTech from "../../components/BackendTech";
 
 
 const Landing = () => {
@@ -46,7 +47,7 @@ const Landing = () => {
 
         <div className="container my-auto ">
           <div className="row">
-            <div className="col-lg-7 d-flex flex-column justify-content-center ">
+            <div className="col-lg-7 d-flex mt-5 mt-md-auto flex-column justify-content-center ">
               <h1 className="landing-heading ">adaptive</h1>
               <h2 className="landing-heading mt-4 landing-heading-two">
                 to future business, your growth & the future
@@ -94,6 +95,17 @@ const Landing = () => {
       />      
       
         <Technologies />
+      </div>
+
+      <div ref={ref3} className="snap-inner about position-relative ">
+      <img src={require("../../assets/img/layer2.png")} alt="tech-layer-one" className="layer1" />
+      <img
+        src={require("../../assets/img/group.png")}
+        alt="technologies"
+        className="side-img-one"
+      /> 
+      
+        <BackendTech/>
       </div>
     </section>
   );

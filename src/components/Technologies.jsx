@@ -1,14 +1,14 @@
 import React from "react";
 import Frontend from "./Frontend";
 import sectionImg from "../assets/img/sectionImg.jpg";
-import Categories from "./Categories";
+ 
 
 const Technologies = () => {
   return (
     <div className="technologies ">
       <div className="container">
         <div className="row">
-          <div className="col-md-12  z-1  mb-5 ">
+          <div className="col-md-12  z-1  mb-2 mb-md-5  ">
             <h1 className="text-center service-heading">
               Front-End <span>Technologies</span>
             </h1>
@@ -23,7 +23,7 @@ const Technologies = () => {
           <div className="col-lg-6 z-1">
             <Frontend />
           </div>
-          <div className="col-lg-6 z-1">
+          <div className="col-lg-6 mt-3 mt-md-0 z-1">
             <img src={sectionImg} alt="technology" className="img-fluid" />
           </div>
         </div>
