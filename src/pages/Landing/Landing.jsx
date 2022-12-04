@@ -2,17 +2,17 @@ import { useRef } from "react";
 import MouseParticles from "react-mouse-particles";
 import Background from "../../components/Background";
 import Sidebar from "../../components/Sidebar";
-import { AiOutlineArrowDown } from "react-icons/ai";
- 
+import { AiOutlineArrowDown } from "react-icons/ai"; 
 import About from "../../components/About";
 import Technologies from "../../components/Technologies";
 import LandingBottom from "../../components/LandingBottom";
 import Services from "../../components/Services";
+
+
 const Landing = () => {
   const ref = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
-
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
