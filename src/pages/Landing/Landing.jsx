@@ -3,17 +3,18 @@ import MouseParticles from "react-mouse-particles";
 import Background from "../../components/Background";
 import Sidebar from "../../components/Sidebar";
 import { AiOutlineArrowDown } from "react-icons/ai"; 
-import About from "../../components/About";
-import Technologies from "../../components/Technologies";
-import LandingBottom from "../../components/LandingBottom";
+import Ews from "../../components/EWS";
+import Technologies from "../../components/Technologies"; 
 import Services from "../../components/Services";
 import BackendTech from "../../components/BackendTech";
+import About from "../../components/About";
 
 
 const Landing = () => {
   const ref = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
+  const ref4 = useRef(null);
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -76,14 +77,19 @@ const Landing = () => {
       </div>
 
       <div ref={ref} className="snap-inner about position-relative">
-        <img src={require("../../assets/img/layer.png")} alt="layer" className="layer" />
-
-{/* <LandingBottom/> */}
+        <img src={require("../../assets/img/layer.png")} alt="layer" className="layer" /> 
         <Services/>
       </div>
 
-      <div ref={ref2} className="snap-inner about position-relative ">
+
+      <div ref={ref2} className="snap-inner  about   position-relative ">
         <About />
+      </div>
+
+
+
+      <div ref={ref2} className="snap-inner about position-relative ">
+        <Ews />
       </div>
 
       <div ref={ref3} className="snap-inner about position-relative ">
@@ -97,7 +103,9 @@ const Landing = () => {
         <Technologies />
       </div>
 
-      <div ref={ref3} className="snap-inner about position-relative ">
+
+
+      <div ref={ref4} className="snap-inner about position-relative ">
       <img src={require("../../assets/img/layer2.png")} alt="tech-layer-one" className="layer1" />
       <img
         src={require("../../assets/img/group.png")}

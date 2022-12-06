@@ -37,13 +37,13 @@ const BackendTech = () => {
               <div className="cat-icon">
                 <img
                   src={
-                    require("../assets/img/icons/responsiveness.svg").default
+                    require("../assets/img/icons/process.svg").default
                   }
                   alt="responsive website"
                   className="img-fluid"
                 />
               </div>
-              <h5 className="cat-heading">Mobile Responsiveness</h5>
+              <h5 className="cat-heading">Fast Processing Speeds</h5>
             </div>
           </div>
           <div className="col-xxl-3 col-md-6   z-1">
@@ -51,13 +51,13 @@ const BackendTech = () => {
               <div className="cat-icon">
                 <img
                   src={
-                    require("../assets/img/icons/seo.svg").default
+                    require("../assets/img/icons/architecture.svg").default
                   }
                   alt="responsive website"
                   className="img-fluid"
                 />
               </div>
-              <h5 className="cat-heading">SEO friendly website</h5>
+              <h5 className="cat-heading">defined Architecture</h5>
             </div>
             
           </div>
@@ -66,13 +66,13 @@ const BackendTech = () => {
               <div className="cat-icon">
                 <img
                   src={
-                    require("../assets/img/icons/time.svg").default
+                    require("../assets/img/icons/databse.svg").default
                   }
                   alt="responsive website"
                   className="img-fluid"
                 />
               </div>
-              <h5 className="cat-heading">Quick Response time</h5>
+              <h5 className="cat-heading">Database structure</h5>
             </div>
 
              
@@ -82,13 +82,13 @@ const BackendTech = () => {
               <div className="cat-icon">
                 <img
                   src={
-                    require("../assets/img/icons/browser.svg").default
+                    require("../assets/img/icons/technology.svg").default
                   }
                   alt="responsive website"
                   className="img-fluid"
                 />
               </div>
-              <h5 className="cat-heading">Browser Competibility</h5>
+              <h5 className="cat-heading">Reliable Technology</h5>
             </div>
              
           </div>

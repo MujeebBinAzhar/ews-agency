@@ -55,10 +55,22 @@ code {
 
 .about-section {
   border-radius: 750px;
-  background-color: #0e0f2e;
+  background-color: #143A5D;
   min-height: 60vh;
-}
+  margin: 1.5rem 0;
+  @media all and (min-width:1600px){
+    margin-top: 7rem; 
+   
+  }
 
+  @media all and (max-width:768px){
+    border-radius: 200px;
+    padding-bottom: 5rem;
+    
+  }
+  
+}
+ 
 .snap-inner {
   @media all and (min-width: 1600px) {
     scroll-snap-align: start;
@@ -745,7 +757,12 @@ code {
   padding-top: 2rem;
   z-index: 99;
   @media all and (max-width: 1600px) {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
+  }
+
+  @media all and (max-width:768px){
+    padding-top: 1.9rem;
+    text-align: center;
   }
 }
 .all-services-btn {
@@ -839,3 +856,12 @@ code {
     text-transform: capitalize;
   }
 }
+ .contact-btn{
+  text-decoration: none;
+  color: #fff !important;
+  border: 2px solid #fff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+
+ }
