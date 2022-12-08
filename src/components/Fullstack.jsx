@@ -1,77 +1,90 @@
-import React from "react"; 
-import shopify from "../assets/img/icons/shopify.svg";
-import wix from "../assets/img/icons/wix.svg";
-import node from "../assets/img/icons/node-dot-js.svg"; 
-import angular from "../assets/img/icons/angularjs.svg"; 
-import wordpress from "../assets/img/icons/wordpress.svg";
-import vue from "../assets/img/icons/vuejs.svg";
+import React from "react";
+import shopify from "../assets/img/icons/shopify.png";
+import wix from "../assets/img/icons/wix.png";
+import node from "../assets/img/icons/mernstack.png";
+import angular from "../assets/img/icons/meanstack.png";
+import wordpress from "../assets/img/icons/wordpress.png";
+import vue from "../assets/img/icons/mevnstack.png";
+import postgres from "../assets/img/icons/pernstack.png";
 const Fullstack = () => {
   const techData = [
+    {
+      icon: postgres,
+      name: "PERN Stack",
+      link: "#",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit saepe consequatur vitae, odit animi eaque molestias pariatur laudantium .",
+    },
     {
       icon: node,
       name: "MERN Stack",
       link: "#",
-      class: "php",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit saepe consequatur vitae, odit animi eaque molestias pariatur laudantium .",
     },
     {
       icon: angular,
       name: "MEAN Stack",
       link: "#",
-      class: "laravel",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit saepe consequatur vitae, odit animi eaque molestias pariatur laudantium .",
     },
     {
       icon: vue,
       name: "MEVN Stack",
       link: "#",
-      class: "vue",
-    },  
-     
-    
-  
-   
-  
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit saepe consequatur vitae, odit animi eaque molestias pariatur laudantium .",
+    },
+
     {
       icon: wordpress,
       name: "Wordpress",
       link: "#",
-      class: "wordpress",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit saepe consequatur vitae, odit animi eaque molestias pariatur laudantium .",
     },
-    
+
     {
       icon: wix,
       name: "Wix",
       link: "#",
-      class: "flask",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit saepe consequatur vitae, odit animi eaque molestias pariatur laudantium .",
     },
-    {
-      icon: shopify,
-      name: "Shopify",
-      link: "#",
-      class: "node",
-    },
-    
-    
-     
-   
-
-     
+    // {
+    //   icon: shopify,
+    //   name: "Shopify",
+    //   link: "#",
+    //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit saepe consequatur vitae, odit animi eaque molestias pariatur laudantium .",
+    // },
   ];
   return (
     <>
-      <ul className="tech-ul">
-        {techData.map((item, index) => {
-          return (
-            <li key={index}>
-              <a href={item.link} className={item.class}>
-                <img src={item.icon} alt="react" className="tech-icon" />
-                {item.name}
-              </a>
-            </li>
-          );
-        })}
+      <div className="container  ">
+        <div className="row  ">
+          {techData.map((item, index) => {
+            return (
+              <div key={index} className="col-sm-6 col-md-4">
+                <div className="backend-card text-center">
+                  <img
+                    src={item.icon}
+                    alt="mean-stack"
+                    className="backend-img"
+                  />
+                  <h5>{item.name}</h5>
+                  <p>
+                   {item.desc}
+                  </p>
 
- 
-      </ul>
+                  <a className="read-more" href="#">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+
+
+          <div className="col-12 pt-t pt-md-5 text-end z-1">
+            <a href="#" className="all-services-btn all-services">All Services</a>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

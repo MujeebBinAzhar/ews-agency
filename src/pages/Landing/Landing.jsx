@@ -2,13 +2,13 @@ import { useRef } from "react";
 import MouseParticles from "react-mouse-particles";
 import Background from "../../components/Background";
 import Sidebar from "../../components/Sidebar";
-import { AiOutlineArrowDown } from "react-icons/ai"; 
+import { AiOutlineArrowDown } from "react-icons/ai";
 import Ews from "../../components/EWS";
-import Technologies from "../../components/Technologies"; 
+import Technologies from "../../components/Technologies";
 import Services from "../../components/Services";
 import BackendTech from "../../components/BackendTech";
 import About from "../../components/About";
-
+import Fullstack from "../../components/Fullstack";
 
 const Landing = () => {
   const ref = useRef(null);
@@ -77,43 +77,52 @@ const Landing = () => {
       </div>
 
       <div ref={ref} className="snap-inner about position-relative">
-        <img src={require("../../assets/img/layer.png")} alt="layer" className="layer" /> 
-        <Services/>
+        <img
+          src={require("../../assets/img/layer.png")}
+          alt="layer"
+          className="layer"
+        />
+        <Services />
       </div>
-
 
       <div ref={ref2} className="snap-inner  about   position-relative ">
         <About />
       </div>
-
-
 
       <div ref={ref2} className="snap-inner about position-relative ">
         <Ews />
       </div>
 
       <div ref={ref3} className="snap-inner about position-relative ">
-      <img src={require("../../assets/img/layer2.png")} alt="tech-layer" className="layer2" />
-      <img
-        src={require("../../assets/img/group.png")}
-        alt="technologies"
-        className="side-img-two"
-      />      
-      
+        <img
+          src={require("../../assets/img/layer3.png")}
+          alt="tech-layer"
+          className="layer2"
+        />
+        <img
+          src={require("../../assets/img/group.png")}
+          alt="technologies"
+          className="side-img-two"
+        />
+
         <Technologies />
       </div>
 
-
+      <div
+        ref={ref3}
+        className="snap-inner full-stack about position-relative "
+      >
+        <BackendTech />
+      </div>
 
       <div ref={ref4} className="snap-inner about position-relative ">
-      <img src={require("../../assets/img/layer2.png")} alt="tech-layer-one" className="layer1" />
-      <img
-        src={require("../../assets/img/group.png")}
-        alt="technologies"
-        className="side-img-one"
-      /> 
-      
-        <BackendTech/>
+          <img
+          src={require("../../assets/img/bottom-layer.jpg")}
+          alt="tech-layer-one"
+          className="bottom-layer"
+        />
+        
+        <Fullstack />
       </div>
     </section>
   );

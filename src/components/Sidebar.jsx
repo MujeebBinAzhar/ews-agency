@@ -1,7 +1,8 @@
 import React, { useState,useEffect } from "react";
-import { AiOutlineBars } from "react-icons/ai";
- import {GoThreeBars} from "react-icons/go";
+import {GoThreeBars} from "react-icons/go";
 import {AiOutlineArrowLeft} from "react-icons/ai";
+
+// import logo from "../assets/img/ews-logo.png";
 
 const Sidebar = () => {
   const [show, setShow] = useState(false);
@@ -33,6 +34,7 @@ const Sidebar = () => {
 
         <div className="muj-logo me-3 me-md-5">
           <h1 className="logo-heading">EWS</h1>
+          {/* <img src={logo} alt="elite-web-services" /> */}
         </div>
       </div>
     </>
