@@ -9,77 +9,79 @@ import javascript from "../assets/img/icons/javascript.svg";
 import bootstrap from "../assets/img/icons/bootstrap.svg";
 import npm from "../assets/img/icons/npm.svg";
 import tailwind from "../assets/img/icons/tailwind-css.svg";
+import ionic from "../assets/img/icons/ionic.svg";
 import next from "../assets/img/icons/next.svg";
 import typescript from "../assets/img/icons/typescript.svg";
 import three from "../assets/img/icons/three.svg";
 import figma from "../assets/img/icons/figma.svg";
 import photoshop from "../assets/img/icons/adobe-photoshop.svg";
+import { Link } from "react-router-dom";
 const Frontend = () => {
   const techData = [
     {
       icon: html,
       name: "HTML",
-      link: "#",
+      link: "frontend/html",
       class: "html",
     },
     {
       icon: css,
       name: "CSS",
-      link: "#",
+      link: "frontend/css",
       class: "css",
     },
     {
       icon: javascript,
       name: "JavaScript",
-      link: "#",
+      link: "frontend/javascript",
       class: "js",
     },
     {
       icon:  bootstrap,
       name: "Bootstrap",
-      link: "#",
+      link: "frontend/bootstrap",
       class: "bootstrap",
     },
     {
       icon: react,
       name: "React",
-      link: "#",
+      link: "frontend/react",
       class: "react",
     },
     {
       icon: angular,
       name: "Angular",
-      link: "#",
+      link: "frontend/angular",
       class: "angular",
     },
     {
       icon: flutter,
       name: "Flutter",
-      link: "#",
+      link: "frontend/flutter",
       class: "flutter",
     },
     {
       icon: npm,
       name: "NPM",
-      link: "#",
+      link: "frontend/npm",
       class: "npm",
     },
     {
       icon: vue,
       name: "Vue.js",
-      link: "#",
+      link: "frontend/vue",
       class: "vue",
     },
     {
       icon: tailwind,
       name: "Tailwind",
-      link: "#",
+      link: "frontend/tailwind",
       class: "tailwind",
     },
     {
-      icon: react,
-      name: "Iconic",
-      link: "#",
+      icon: ionic,
+      name: "Ionic",
+      link: "frontend/iconic",
       class: "iconic",
     },
    
@@ -87,7 +89,7 @@ const Frontend = () => {
     {
       icon: next,
       name: "Next.js",
-      link: "#",
+      link: "frontend/next",
       class: "next",
     },
     {
@@ -125,10 +127,10 @@ const Frontend = () => {
         {techData.map((item, index) => {
           return (
             <li key={index}>
-              <a href={item.link} className={item.class}>
+              <Link to={item.link} className={item.class}>
                 <img src={item.icon} alt="react" className="tech-icon" />
                 {item.name}
-              </a>
+              </Link>
             </li>
           );
         })}

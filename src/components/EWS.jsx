@@ -1,9 +1,7 @@
 import React from "react";
 import { BiMessageAltDetail } from "react-icons/bi";
 import { BsWhatsapp } from "react-icons/bs";
-import {CiLinkedin} from "react-icons/ci";
-import {CiInstagram} from "react-icons/ci";
-import {AiOutlineFacebook} from "react-icons/ai";
+import SocialIcons from "./SocialIcons";
 
 const Ews = () => {
   return (
@@ -98,30 +96,9 @@ const Ews = () => {
                   </a>
                 </section>
 
-                <div className="social-icons mt-4">
-                  <div className="icon-container">
-                    <a href="#">                       
-                      <CiLinkedin size={25} color="#fff" />
-                    </a>
-                  </div>
+  <SocialIcons/>
+               
 
-                  <div className="icon-container">
-
-                    <a href="#">                       
-                      <CiInstagram size={25} color="#fff" />
-                    </a>
-
-                  </div>
-
-                  <div className="icon-container">
-                    <a href="#">
-                       
-                      <AiOutlineFacebook size={25} color="#fff" />
-                    </a>
-                  </div>
-
-                   
-                </div>
               </div>
             </div>
 
