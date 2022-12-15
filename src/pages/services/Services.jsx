@@ -1,4 +1,6 @@
 import React from "react";
+import {BsWhatsapp,BsInstagram,BsTwitter} from "react-icons/bs";
+import {FaFacebookF,FaTelegramPlane} from "react-icons/fa";
 
 const Services = () => {
   return (
@@ -28,7 +30,6 @@ const Services = () => {
                 aria-label="Slide 3"
               ></button>
             </div>
-
 
             <div className="carousel-inner">
               <div className="carousel-item active">
@@ -116,7 +117,6 @@ const Services = () => {
 
       <div className="services-section">
         <div className="container">
-
           <div className="service-card">
             <div className="row">
               <div className="col-md-8 ">
@@ -155,54 +155,179 @@ const Services = () => {
               </div>
             </div>
           </div>
-
-
-
-          <div className="service-card">
-            <div className="row">
-             
-              <div className="col-md-4 p-4">
-                <h4 className="card-heading">Content Managment System (CMS)</h4>
-                <p className="">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id voluptates magnam consequuntur odit esse natus nisi tempora culpa quia aliquam illo magni, quisquam commodi ipsa possimus asperiores beatae explicabo.
-                </p>
-
-                <ul className="service-card-ul">
-                  <li>Wordpress</li>
-                  <li>Wix</li>
-                  <li>shopify</li>
-                  
-                </ul>
-                <p>Following are the core features of custom website:</p>
-
-                <ul>
-                  <li>Long Term Business</li>
-                  <li>Easy to Modify</li>
-                  <li>Reliable</li>
-                  <li>Secure</li>
-                  <li>Scalable</li>
-                </ul>
-              </div>
-
-
-              <div className="col-md-8">
-                <img
-                  src={require("../../assets/img/custom-web.jpg")}
-                  alt="custom website"
-                  className="img-fluid"
-                />
-              </div>
-
-
-            </div>
-          </div>
-
         </div>
       </div>
 
+      <div className="service-layer">
+        <img
+          src={require("../../assets/img/svgexport-1.svg").default}
+          alt="separator"
+          className="separator"
+        />
 
-      <div className="services-bottom">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias corporis quos fuga, quibusdam iste similique beatae? Ducimus enim, nihil reiciendis, placeat atque qui maiores dolor laboriosam vel officiis corrupti molestias.
+        <div className="separator-layer">
+          <div className="container ">
+            <div className="service-card ">
+              <div className="row">
+                <div className="col-md-4 p-4">
+                  <h4 className="card-heading">
+                    Content Managment System (CMS)
+                  </h4>
+                  <p className="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reprehenderit id voluptates magnam consequuntur odit esse
+                    natus nisi tempora culpa quia aliquam illo magni, quisquam
+                    commodi ipsa possimus asperiores beatae explicabo.
+                  </p>
+
+                  <ul className="service-card-ul">
+                    <li>Wordpress</li>
+                    <li>Wix</li>
+                    <li>shopify</li>
+                  </ul>
+                  <p>Following are the core features of custom website:</p>
+
+                  <ul>
+                    <li>Long Term Business</li>
+                    <li>Easy to Modify</li>
+                    <li>Reliable</li>
+                    <li>Secure</li>
+                    <li>Scalable</li>
+                  </ul>
+                </div>
+
+                <div className="col-md-8">
+                  <img
+                    src={require("../../assets/img/custom-web.jpg")}
+                    alt="custom website"
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src={require("../../assets/img/svgexport-1.svg").default}
+          alt="separator"
+          className="separator-bottom"
+        />
+      </div>
+
+      <div className="service-layer-two">
+        {/* <img src={require("../../assets/img/laptop.png")} alt="laptop" className="laptop" /> */}
+
+        <div className="container">
+
+          <div className="row">
+            <div className="col-md-6 mt-3">
+              <h1>Website Customization</h1>
+              <div className="row pt-3 pt-md-5">
+                <div className="col-6 mt-3">
+                  <div className="web-card">
+                    <h5>Server Engine Optimization</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+                      Aperiam necessi tatibus deserunt iure, eius laudan
+                    </p>
+                  </div>
+                </div>
+                <div className="col-6 mt-3">
+                  <div className="web-card">
+                    <h5>Website Redesign</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+                      Aperiam necessi tatibus deserunt iure, eius laudan
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-6 mt-3">
+                  <div className="web-card">
+                    <h5>Website UI Design</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+                      Aperiam necessi tatibus deserunt iure, eius laudan
+                    </p>
+                  </div>
+                </div>
+                <div className="col-6 mt-3">
+                  <div className="web-card">
+                    <h5>Website Content Creation</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+                      Aperiam necessi tatibus deserunt iure, eius laudan
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-6 d-flex justify-content-center mt-3">
+              <img src={require("../../assets/img/sectionImg.jpg")} alt="website-redesign" className="img-fluid" />
+            </div>
+          </div>
+
+
+          
+          <div className="row pt-5 mt-md-5">
+
+            <div className="col-md-6 d-flex justify-content-center order-last order-md-first mt-3">
+              <img src={require("../../assets/img/market-bg.jpg")} alt="marketting" className="img-fluid" />
+            </div>
+
+
+            <div className="col-md-6  order-fisrt order-md-last mt-3">
+              <h1>Digital Marketting</h1>
+              <div className="row pt-3 pt-md-5">
+                <div className="col-6 mt-3">
+                  <div className="web-card">
+                   <ul>
+                    <li> <div className="marketing"><BsWhatsapp className="icon"/> </div> </li>
+                    <li> <div className="marketing"><BsInstagram className="icon"/></div>  </li>
+                    <li> <div className="marketing"><FaFacebookF className="icon"/> </div> </li>
+                    <li> <div className="marketing"> <BsTwitter className="icon"/> </div></li>
+                    <li> <div className="marketing"> <FaTelegramPlane className="icon"/> </div></li>
+                    
+                   </ul>
+                  </div>
+                </div>
+                <div className="col-6 mt-3">
+                  <div className="web-card">
+                    <h5>Website Redesign</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+                      Aperiam necessi tatibus deserunt iure, eius laudan
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-6 mt-3">
+                  <div className="web-card">
+                    <h5>Website UI Design</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+                      Aperiam necessi tatibus deserunt iure, eius laudan
+                    </p>
+                  </div>
+                </div>
+                <div className="col-6 mt-3">
+                  <div className="web-card">
+                    <h5>Website Content Creation</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet conse ctetur adipi sicing elit.
+                      Aperiam necessi tatibus deserunt iure, eius laudan
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
       </div>
     </>
   );
